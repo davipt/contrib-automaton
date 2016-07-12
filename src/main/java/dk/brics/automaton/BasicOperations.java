@@ -467,7 +467,10 @@ final public class BasicOperations {
 		worklist.add(initialset);
 		a.initial = new State();
 		newstate.put(initialset, a.initial);
+		long start = System.currentTimeMillis();
 		while (worklist.size() > 0) {
+			if (System.currentTimeMillis() - start > 5 * 1000)
+				throw new IllegalStateException("took too long, bad luck");
 			Set<State> s = worklist.removeFirst();
 			State r = newstate.get(s);
 			for (State q : s)

@@ -4,7 +4,7 @@
     <groupId>dk.brics.automaton</groupId>
 	<artifactId>automaton</artifactId>
 	<name>automaton</name>
-	<version>1.11-8</version>
+	<version>1.11-8-davipt</version>
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
